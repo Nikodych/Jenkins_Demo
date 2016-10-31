@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parent Suite">
+    <suite-files>
+        <suite-file path="administrator.xml"/>
+        <suite-file path="customer.xml"/>
+        <suite-file path="merchandiser.xml"/>
+        <suite-file path="supervisor.xml"/>
+        <suite-file path="others.xml"/>
+    </suite-files>
+</suite>

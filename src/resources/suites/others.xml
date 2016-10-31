@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="Others Tests">
+        <packages>
+            <package name="academy.softserve.edu.tests.*">
+                <exclude name="academy.softserve.edu.tests.administrator"/>
+                <exclude name="academy.softserve.edu.tests.customer"/>
+                <exclude name="academy.softserve.edu.tests.merchandiser"/>
+                <exclude name="academy.softserve.edu.tests.supervisor"/>
+            </package>
+        </packages>
+    </test>
+</suite>

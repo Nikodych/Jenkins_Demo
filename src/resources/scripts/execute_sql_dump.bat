@@ -1,0 +1,1 @@
+mysql --host=192.168.56.101 --port=3306 --user=oms --password=1qaz2wsx oms < %~dp0/OMS_DB_DUMP.sql

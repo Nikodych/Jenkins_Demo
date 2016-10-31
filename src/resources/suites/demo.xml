@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Suite">
+
+    <!--dshkliar test-->
+    <test name="Totals Section Test">
+        <classes>
+            <class name="academy.softserve.edu.tests.customer.TotalsSectionTest"/>
+        </classes>
+    </test> <!-- Totals Section Test -->
+
+    <!--rkliuha test-->
+    <test name="Add Card Info To New Order Test">
+        <classes>
+            <class name="academy.softserve.edu.tests.customer.AddCardInfoToNewOrderTest"/>
+        </classes>
+    </test> <!-- Add Card Info To New Order Test -->
+
+    <!--okorn test-->
+    <test name="Edit Order Test">
+        <classes>
+            <class name="academy.softserve.edu.tests.merchandiser.EditOrderTest"/>
+        </classes>
+    </test> <!-- Edit Order Test -->
+
+    <!--kmarko test-->
+    <test name="Delete Order Test">
+        <classes>
+            <class name="academy.softserve.edu.tests.merchandiser.DeleteOrderTest"/>
+        </classes>
+    </test> <!-- Delete Order Test -->
+
+    <!--dpapshev test-->
+    <test name="Test Admin Table Navigation">
+        <classes>
+            <class name="academy.softserve.edu.tests.administrator.AdminTableTest">
+                <methods>
+                    <include name="testAdminTableNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test Admin Table Navigation -->
+
+    <!--ksichenko test-->
+    <test name="Delete Product Test">
+        <classes>
+            <class name="academy.softserve.edu.tests.supervisor.DeleteProductTest"/>
+        </classes>
+    </test> <!-- Delete Product Test -->
+</suite> <!-- Demo Suite -->

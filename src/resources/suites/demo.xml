@@ -3,32 +3,32 @@
 <suite name="Demo Suite">
 
     <!--dshkliar test-->
-    <test name="Totals Section Test">
+<!--    <test name="Totals Section Test">
         <classes>
             <class name="academy.softserve.edu.tests.customer.TotalsSectionTest"/>
         </classes>
-    </test> <!-- Totals Section Test -->
+    </test> &lt;!&ndash; Totals Section Test &ndash;&gt;-->
 
     <!--rkliuha test-->
-    <test name="Add Card Info To New Order Test">
+<!--    <test name="Add Card Info To New Order Test">
         <classes>
             <class name="academy.softserve.edu.tests.customer.AddCardInfoToNewOrderTest"/>
         </classes>
-    </test> <!-- Add Card Info To New Order Test -->
+    </test> &lt;!&ndash; Add Card Info To New Order Test &ndash;&gt;-->
 
     <!--okorn test-->
-    <test name="Edit Order Test">
+<!--    <test name="Edit Order Test">
         <classes>
             <class name="academy.softserve.edu.tests.merchandiser.EditOrderTest"/>
         </classes>
-    </test> <!-- Edit Order Test -->
+    </test> &lt;!&ndash; Edit Order Test &ndash;&gt;-->
 
     <!--kmarko test-->
-    <test name="Delete Order Test">
+<!--    <test name="Delete Order Test">
         <classes>
             <class name="academy.softserve.edu.tests.merchandiser.DeleteOrderTest"/>
         </classes>
-    </test> <!-- Delete Order Test -->
+    </test> &lt;!&ndash; Delete Order Test &ndash;&gt;-->
 
     <!--dpapshev test-->
     <test name="Test Admin Table Navigation">
@@ -42,9 +42,9 @@
     </test> <!-- Test Admin Table Navigation -->
 
     <!--ksichenko test-->
-    <test name="Delete Product Test">
+<!--    <test name="Delete Product Test">
         <classes>
             <class name="academy.softserve.edu.tests.supervisor.DeleteProductTest"/>
         </classes>
-    </test> <!-- Delete Product Test -->
+    </test> &lt;!&ndash; Delete Product Test &ndash;&gt;-->
 </suite> <!-- Demo Suite -->

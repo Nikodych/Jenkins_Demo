@@ -31,6 +31,7 @@ public class WebDriverFactory {
 
         final String pathWebDriverChromeMac = PropertiesReader.getDefaultProperty("path.webdriver.chrome.mac");
         final String pathWebDriverChromeWin = PropertiesReader.getDefaultProperty("path.webdriver.chrome.win");
+        final String pathWebDriverChromeLinux = PropertiesReader.getDefaultProperty("path.webdriver.chrome.linux");
         final String pathWebDriverIe = PropertiesReader.getDefaultProperty("path.webdriver.ie");
 
         final String remoteWebDriverUrl = PropertiesReader.getDefaultProperty("remote.webdriver.url");
@@ -49,6 +50,11 @@ public class WebDriverFactory {
 
                     case CHROME_MAC:
                         System.setProperty(webDriverChrome, pathWebDriverChromeMac);
+                        driver = new ChromeDriver();
+                        break;
+
+                    case CHROME_LINUX:
+                        System.setProperty(webDriverChrome, pathWebDriverChromeLinux);
                         driver = new ChromeDriver();
                         break;
 
@@ -72,6 +78,11 @@ public class WebDriverFactory {
                 switch (cmdBrowserTypeEnum) {
                     case CHROME_MAC:
                         System.setProperty(webDriverChrome, pathWebDriverChromeMac);
+                        driver = new ChromeDriver();
+                        break;
+
+                    case CHROME_LINUX:
+                        System.setProperty(webDriverChrome, pathWebDriverChromeLinux);
                         driver = new ChromeDriver();
                         break;
 

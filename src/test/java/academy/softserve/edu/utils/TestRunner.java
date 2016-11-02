@@ -2,6 +2,7 @@ package academy.softserve.edu.utils;
 
 import academy.softserve.edu.pageobjects.*;
 import lombok.Getter;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -46,9 +47,11 @@ public class TestRunner {
 
         driver = webDriverFactory.getDriver();
 
+        Dimension dimension = new Dimension(1920, 1080);
+
         driver.manage()
                 .window()
-                .maximize();
+                .setSize(dimension);
 
         driver.get(logInPageUrl);
 

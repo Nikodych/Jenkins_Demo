@@ -28,11 +28,13 @@ public class WebDriverFactory {
 
         final String webDriverChrome = PropertiesReader.getDefaultProperty("webdriver.chrome");
         final String webDriverIe = PropertiesReader.getDefaultProperty("webdriver.ie");
+        final String webDriverFirefox = PropertiesReader.getDefaultProperty("webdriver.firefox");
 
         final String pathWebDriverChromeMac = PropertiesReader.getDefaultProperty("path.webdriver.chrome.mac");
         final String pathWebDriverChromeWin = PropertiesReader.getDefaultProperty("path.webdriver.chrome.win");
         final String pathWebDriverChromeLinux = PropertiesReader.getDefaultProperty("path.webdriver.chrome.linux");
         final String pathWebDriverIe = PropertiesReader.getDefaultProperty("path.webdriver.ie");
+        final String pathWebDriverFirefoxLinux = PropertiesReader.getDefaultProperty("path.webdriver.firefox.linux");
 
         final String remoteWebDriverUrl = PropertiesReader.getDefaultProperty("remote.webdriver.url");
 
@@ -70,6 +72,7 @@ public class WebDriverFactory {
 
                     case FIREFOX:
                     default:
+                        System.setProperty(webDriverFirefox, pathWebDriverFirefoxLinux);
                         driver = new FirefoxDriver();
                         break;
                 }

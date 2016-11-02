@@ -12,7 +12,7 @@ public class Wait {
 
     private WebDriver driver;
     private ILocator locator;
-    final private int timeout = 20;
+    final private int timeout = 200;
 
     public Wait(final WebDriver driver, final ILocator locator) {
 

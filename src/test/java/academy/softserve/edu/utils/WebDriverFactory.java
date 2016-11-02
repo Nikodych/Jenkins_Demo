@@ -85,7 +85,7 @@ public class WebDriverFactory {
                         break;
 
                     case CHROME_LINUX:
-                        System.setProperty(webDriverChrome, "/usr/bin/chromedriver"/*pathWebDriverChromeLinux*/);
+                        System.setProperty(webDriverChrome, pathWebDriverChromeLinux);
                         driver = new ChromeDriver();
                         break;
 

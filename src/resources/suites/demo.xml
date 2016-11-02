@@ -2,6 +2,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Demo Suite">
 
+        <test name="Test">
+        <classes>
+            <class name="academy.softserve.edu.tests.administrator.SwitchTabsTest"/>
+        </classes>
+    </test> <!-- Test -->
+
     <!--dshkliar test-->
 <!--    <test name="Totals Section Test">
         <classes>
@@ -31,7 +37,7 @@
     </test> &lt;!&ndash; Delete Order Test &ndash;&gt;-->
 
     <!--dpapshev test-->
-    <test name="Test Admin Table Navigation">
+    <!--<test name="Test Admin Table Navigation">
         <classes>
             <class name="academy.softserve.edu.tests.administrator.AdminTableTest">
                 <methods>
@@ -39,7 +45,7 @@
                 </methods>
             </class>
         </classes>
-    </test> <!-- Test Admin Table Navigation -->
+    </test> &lt;!&ndash; Test Admin Table Navigation &ndash;&gt;-->
 
     <!--ksichenko test-->
 <!--    <test name="Delete Product Test">

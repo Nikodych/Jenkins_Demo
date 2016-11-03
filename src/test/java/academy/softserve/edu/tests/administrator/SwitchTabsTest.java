@@ -10,6 +10,8 @@ import lombok.Getter;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -33,16 +35,8 @@ public class SwitchTabsTest /*extends TestRunner*/ {
     protected AdministrationPage administrationPage;
 
 
-//***************************************************************
-
-
-    //  This test checks if Administrator user can see the following tabs: ‘Administration’ and ‘User Info’(default),
-    //  test checks if Administrator user can switch between tabs.
-
-    @Test
-    final public void testSwitchingBetweenTabs() {
-
-//***************************************************************************
+    @BeforeMethod
+    public final void setUp() {
 
         System.setProperty("webdriver.chrome.driver", PATH_TO_CHROME_DRIVER);
 
@@ -60,8 +54,17 @@ public class SwitchTabsTest /*extends TestRunner*/ {
 
         logInPage = new LogInPage(driver);
 
+    }
 
-//***************************************************************************
+
+//***************************************************************
+
+
+    //  This test checks if Administrator user can see the following tabs: ‘Administration’ and ‘User Info’(default),
+    //  test checks if Administrator user can switch between tabs.
+
+    @Test
+    final public void testSwitchingBetweenTabs() {
 
         userInfoPage = logInPage.logInAs(Roles.ADMINISTRATOR);
 
@@ -92,8 +95,13 @@ public class SwitchTabsTest /*extends TestRunner*/ {
 
         userInfoPage.doLogOut();
 
-//*******************************************************************
-        driver.quit();
-//*******************************************************************
     }
+
+//*******************************************************************
+    @AfterMethod
+    public final void tearDown() {
+
+        driver.quit();
+    }
+//*******************************************************************
 }

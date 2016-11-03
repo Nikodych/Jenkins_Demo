@@ -6,6 +6,7 @@ import academy.softserve.edu.pageobjects.LogInPage;
 import academy.softserve.edu.pageobjects.UserInfoPage;
 import academy.softserve.edu.utils.PropertiesReader;
 /*import academy.softserve.edu.utils.TestRunner;*/
+import lombok.Getter;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,6 +25,7 @@ public class SwitchTabsTest /*extends TestRunner*/ {
     public static final String PATH_TO_CHROME_DRIVER = PropertiesReader.getDefaultProperty("path.webdriver.chrome.linux");
     public static final int TIMEOUT = 30;
 
+    @Getter
     protected WebDriver driver;
 
     protected UserInfoPage userInfoPage;

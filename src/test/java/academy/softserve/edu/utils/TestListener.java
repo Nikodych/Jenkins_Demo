@@ -1,5 +1,6 @@
 package academy.softserve.edu.utils;
 
+import academy.softserve.edu.tests.administrator.SwitchTabsTest;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,7 +22,7 @@ public class TestListener extends TestListenerAdapter {
         final Object currentClass = result
                 .getInstance();
 
-        final WebDriver driver = ((TestRunner) currentClass)
+        final WebDriver driver = ((/*TestRunner*/SwitchTabsTest) currentClass)
                 .getDriver();
 
         final Date currentDate = new Date();

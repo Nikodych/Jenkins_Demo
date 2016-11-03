@@ -66,7 +66,7 @@ public class SwitchTabsTest /*extends TestRunner*/ {
     @Test
     final public void testSwitchingBetweenTabs() {
 
-        System.setProperty("webdriver.chrome.driver", "src//resources//drivers//chromedriver_win.exe"/*"/usr/bin/chromedriver"*/);
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.com");
         System.out.println("Chrome browser opened and navigated to OMS site");

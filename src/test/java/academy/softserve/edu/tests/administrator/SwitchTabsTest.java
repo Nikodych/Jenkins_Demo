@@ -1,18 +1,65 @@
 package academy.softserve.edu.tests.administrator;
 
 import academy.softserve.edu.enums.Roles;
+import academy.softserve.edu.pageobjects.AdministrationPage;
+import academy.softserve.edu.pageobjects.LogInPage;
+import academy.softserve.edu.pageobjects.UserInfoPage;
+import academy.softserve.edu.utils.PropertiesReader;
 import academy.softserve.edu.utils.TestRunner;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 import static academy.softserve.edu.asserts.AbstractElementAssert.assertThat;
 
-public class SwitchTabsTest extends TestRunner {
+public class SwitchTabsTest /*extends TestRunner*/ {
+
+//***************************************************************
+
+
+    public static final String HOME_URL = PropertiesReader.getDefaultProperty("login.url");
+    public static final String PATH_TO_CHROME_DRIVER = PropertiesReader.getDefaultProperty("path.webdriver.chrome.linux");
+    public static final int TIMEOUT = 30;
+
+    protected WebDriver driver;
+
+    protected UserInfoPage userInfoPage;
+    protected LogInPage logInPage;
+    protected AdministrationPage administrationPage;
+
+
+//***************************************************************
+
 
     //  This test checks if Administrator user can see the following tabs: ‘Administration’ and ‘User Info’(default),
     //  test checks if Administrator user can switch between tabs.
 
     @Test
     final public void testSwitchingBetweenTabs() {
+
+//***************************************************************************
+
+        System.setProperty("webdriver.chrome.linux", PATH_TO_CHROME_DRIVER);
+
+        driver = new ChromeDriver();
+
+        Dimension dimension = new Dimension(1920, 1080);
+
+        driver.manage()
+                .window()
+                .setSize(dimension);
+
+        driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
+
+        driver.get(HOME_URL);
+
+        logInPage = new LogInPage(driver);
+
+
+//***************************************************************************
 
         userInfoPage = logInPage.logInAs(Roles.ADMINISTRATOR);
 
@@ -42,5 +89,9 @@ public class SwitchTabsTest extends TestRunner {
                 .isDisplayed();
 
         userInfoPage.doLogOut();
+
+//*******************************************************************
+        driver.quit();
+//*******************************************************************
     }
 }

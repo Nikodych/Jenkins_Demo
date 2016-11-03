@@ -24,7 +24,7 @@ public class SwitchTabsTest /*extends TestRunner*/ {
 
 
     public static final String HOME_URL = PropertiesReader.getDefaultProperty("login.url");
-    public static final String PATH_TO_CHROME_DRIVER = PropertiesReader.getDefaultProperty("path.webdriver.chrome.linux");
+//    public static final String PATH_TO_CHROME_DRIVER = PropertiesReader.getDefaultProperty("path.webdriver.chrome.linux");
     public static final int TIMEOUT = 30;
 
     @Getter
@@ -38,7 +38,7 @@ public class SwitchTabsTest /*extends TestRunner*/ {
     @BeforeMethod
     public final void setUp() {
 
-        System.setProperty("webdriver.chrome.driver", PATH_TO_CHROME_DRIVER);
+        System.setProperty("webdriver.chrome.driver", /*PATH_TO_CHROME_DRIVER*/"/usr/bin/chromedriver");
 
         driver = new ChromeDriver();
 

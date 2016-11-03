@@ -5,7 +5,7 @@ import academy.softserve.edu.pageobjects.AdministrationPage;
 import academy.softserve.edu.pageobjects.LogInPage;
 import academy.softserve.edu.pageobjects.UserInfoPage;
 import academy.softserve.edu.utils.PropertiesReader;
-import academy.softserve.edu.utils.TestRunner;
+/*import academy.softserve.edu.utils.TestRunner;*/
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -42,7 +42,7 @@ public class SwitchTabsTest /*extends TestRunner*/ {
 
 //***************************************************************************
 
-        System.setProperty("webdriver.chrome.linux", PATH_TO_CHROME_DRIVER);
+        System.setProperty("webdriver.chrome.driver", PATH_TO_CHROME_DRIVER);
 
         driver = new ChromeDriver();
 

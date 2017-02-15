@@ -9,16 +9,16 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <skipTests>false</skipTests>
-        <!--<selenium-java.version>2.53.1</selenium-java.version>-->
-        <selenium-java.version>2.48.0</selenium-java.version>
+        <selenium-java.version>2.53.1</selenium-java.version>
+        <!--<selenium-java.version>2.48.0</selenium-java.version>-->
         <selenium-firefox-driver.version>2.53.1</selenium-firefox-driver.version>
         <selenium-chrome-driver.version>2.53.1</selenium-chrome-driver.version>
         <selenium-ie-driver.version>2.53.1</selenium-ie-driver.version>
         <selenium-api.version>2.53.1</selenium-api.version>
         <selenium-support.version>2.53.1</selenium-support.version>
         <selenium-remote-driver.version>2.53.1</selenium-remote-driver.version>
-        <!--<testng.version>6.9.10</testng.version>-->
-        <testng.version>6.9.6</testng.version>
+        <testng.version>6.9.10</testng.version>
+        <!--<testng.version>6.9.6</testng.version>-->
         <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
         <org.apache.poi>3.14</org.apache.poi>
         <org.apache.poi-ooxml>3.14</org.apache.poi-ooxml>

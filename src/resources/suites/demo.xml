@@ -4,7 +4,7 @@
 
         <test name="Test">
         <classes>
-            <class name="academy.softserve.edu.tests.administrator.SwitchTabsTest"/>
+            <class name="academy.softserve.edu.tests.customer.SwitchTabsTest"/>
         </classes>
     </test> <!-- Test -->
 

@@ -112,8 +112,8 @@
                         </property>
                         <property>
                             <name>listener</name>
-                            <value>org.uncommons.reportng.HTMLReporter<!--,
-                                academy.softserve.edu.utils.TestListener-->
+                            <value>org.uncommons.reportng.HTMLReporter,
+                                academy.softserve.edu.utils.TestListener
                             </value>
                         </property>
                     </properties>

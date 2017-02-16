@@ -28,7 +28,7 @@
         <assertj-core.version>3.5.2</assertj-core.version>
     </properties>
 
-<!--    <profiles>
+    <profiles>
         <profile>
             <id>windows</id>
             <activation>
@@ -51,7 +51,7 @@
                 <script.extension>.sh</script.extension>
             </properties>
         </profile>
-    </profiles>-->
+    </profiles>
 
     <build>
         <resources>
@@ -62,7 +62,7 @@
         </resources>
 
         <plugins>
-<!--            <plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.5.0</version>
@@ -78,7 +78,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

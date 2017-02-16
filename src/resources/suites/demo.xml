@@ -2,42 +2,46 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Demo Suite">
 
-        <test name="Test">
+<!--         <test name="Test">
         <classes>
             <class name="academy.softserve.edu.tests.customer.SwitchTabsTest"/>
         </classes>
-    </test> <!-- Test -->
+    </test> <!-- Test --> -->
 
     <!--dshkliar test-->
-<!--    <test name="Totals Section Test">
+   <test name="Totals Section Test">
         <classes>
             <class name="academy.softserve.edu.tests.customer.TotalsSectionTest"/>
         </classes>
-    </test> &lt;!&ndash; Totals Section Test &ndash;&gt;-->
+    </test>
+<!--         &lt;!&ndash; Totals Section Test &ndash;&gt; -->
 
     <!--rkliuha test-->
-<!--    <test name="Add Card Info To New Order Test">
+   <test name="Add Card Info To New Order Test">
         <classes>
             <class name="academy.softserve.edu.tests.customer.AddCardInfoToNewOrderTest"/>
         </classes>
-    </test> &lt;!&ndash; Add Card Info To New Order Test &ndash;&gt;-->
+    </test>
+<!--         &lt;!&ndash; Add Card Info To New Order Test &ndash;&gt; -->
 
     <!--okorn test-->
-<!--    <test name="Edit Order Test">
+   <test name="Edit Order Test">
         <classes>
             <class name="academy.softserve.edu.tests.merchandiser.EditOrderTest"/>
         </classes>
-    </test> &lt;!&ndash; Edit Order Test &ndash;&gt;-->
+    </test>
+<!--         &lt;!&ndash; Edit Order Test &ndash;&gt; -->
 
     <!--kmarko test-->
-<!--    <test name="Delete Order Test">
+   <test name="Delete Order Test">
         <classes>
             <class name="academy.softserve.edu.tests.merchandiser.DeleteOrderTest"/>
         </classes>
-    </test> &lt;!&ndash; Delete Order Test &ndash;&gt;-->
+    </test>
+<!--         &lt;!&ndash; Delete Order Test &ndash;&gt; -->
 
     <!--dpapshev test-->
-    <!--<test name="Test Admin Table Navigation">
+    <test name="Test Admin Table Navigation">
         <classes>
             <class name="academy.softserve.edu.tests.administrator.AdminTableTest">
                 <methods>
@@ -45,12 +49,14 @@
                 </methods>
             </class>
         </classes>
-    </test> &lt;!&ndash; Test Admin Table Navigation &ndash;&gt;-->
+    </test>
+<!--         &lt;!&ndash; Test Admin Table Navigation &ndash;&gt; -->
 
     <!--ksichenko test-->
-<!--    <test name="Delete Product Test">
+   <test name="Delete Product Test">
         <classes>
             <class name="academy.softserve.edu.tests.supervisor.DeleteProductTest"/>
         </classes>
-    </test> &lt;!&ndash; Delete Product Test &ndash;&gt;-->
-</suite> <!-- Demo Suite -->
+    </test>
+<!--         &lt;!&ndash; Delete Product Test &ndash;&gt;-->
+</suite> <!-- Demo Suite
